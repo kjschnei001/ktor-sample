@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  app:
+    build:
+      context: ./
+    environment:
+      OTEL_JAVAAGENT_DEBUG: true
+      OTEL_TRACES_EXPORTER: none
+      OTEL_LOGS_EXPORTER: none
+      OTEL_METRICS_EXPORTER: none
